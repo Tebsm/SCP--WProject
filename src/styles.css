@@ -1,5 +1,5 @@
 .container {
-  max-width: 800px;
+  max-width: 100%;
   margin: 0 auto;
   margin-top: 30px;
   padding: 10px;
@@ -35,7 +35,7 @@ form {
   background-color: rgb(184, 122, 241);
 }
 #temp {
-  font-size: 40px;
+  font-size: 60px;
 }
 #weatherDescription {
   margin-top: 0px;
@@ -75,6 +75,12 @@ form {
 #win {
   font-size: 20px;
 }
-a {
-text-align: center;}
+.codelink {
+  text-align: center;
+}
+.container-text-center {
+  text-align: center;
+}
+</style> */
 
+  

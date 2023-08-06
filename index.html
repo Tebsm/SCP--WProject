@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Parcel Sandbox</title>
+    <title>Your Weather Buddy</title>
 		<meta charset="UTF-8" />
 	<link rel="stylesheet" href="src/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
@@ -21,37 +21,38 @@
             autofocus="on"   
             id = "search-text-input"/>
          <button type="submit" class="btn btn-primary" value = search>Submit</button>
-         <button id="currentLoc"type="button" class="btn btn-primary city">Current</button>
+
         </form>
     </div>         
     <br>
     <h2 id="city-name">Currently in 
        Pretoria</h2>
 
-    <div class="container text-left">
-            <div class="row">
-              <div class="col">
-                <div id="current-time"> </div>
-                            <span> <strong id= "temp">
-                                    21 
-                                </strong> </span>
-                               
-                                <button id="celsius"><sup>°C</button>
+       <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class=" row">
+            <div id="current-time"> </div></div>
+            <div class="row"> <span> <strong id= "temp">
+              21 
+          </strong> <button id="celsius"><sup>°C</button>
             <span id="divider"><sup>|</span>
-            <button id="fahrenheit"><sup>°F</button>
-            
-            <div id="weatherDescription"> 🌥️🌥️ Clear Sky</div>
+            <button id="fahrenheit"><sup>°F</button></div></span>
+                            
+              <div. id="weatherIcon">🌥️🌥️ </div.>               
+              <span id="weatherDescription">Clear Sky</span>
               </div>
+              
               <div class="col">
-          
-                
+                <div class=" box">
                 <div id=hum> Humidity:</div>
                 <div id=win> Wind:</div></div>
               </div>
+            </div>
             
           </div>
         <br>
-        <div class="container text-center">
+        <div class="container-text-center">
             <div class="row forecast">
                 <div class="col">
                     Today
@@ -80,23 +81,27 @@
                     <br> ☀️<br>
                     18° 4°
                 </div>
+               
                 <div class="col">
-                    Friday
-                    <br> ☀️<br>
-                    17° 4°
-                </div>
+                  Friday
+                  <br> ☀️<br>
+                  17° 4°
+              </div>
+              
             </div>
                 </div>
-                
+            </div>
+              
 				<br>
 				
 	</div>	
-  <div class="container">
-    <a href="https://github.com/Tebsm/SCP--WProject.gitt!">Source Code</a> by TLM😉
-  </div>
   
-
-<script src="src/index.js">
+  </div>
+  <br>
+ <div class = codelink> 
+    <a href="https://github.com/Tebsm/SCP--WProject.gitt!">Open-source Code</a> by TL Motebele👩🏾‍💻
+ </div>
+    <script src="src/index.js">
 </script>
     
   </body>
