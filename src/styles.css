@@ -10,7 +10,7 @@
     rgb(252, 239, 250) 50.8%,
     rgb(234, 251, 251) 77.6%,
     rgb(240, 251, 244) 100.7%
-  ); /* Optional: Add a background color to the container */
+  )
 }
 h1 {
   text-align: center;
@@ -81,6 +81,3 @@ form {
 .container-text-center {
   text-align: center;
 }
-</style> */
-
-  
