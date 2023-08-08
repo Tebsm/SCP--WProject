@@ -31,22 +31,31 @@ function submittedCityWeather(city) {
       let iconUrl = `http://openweathermap.org/img/wn/${weatherIcon}.png`;
       let weatherIconDiv = document.querySelector("#weatherIcon");
       weatherIconDiv.innerHTML = `<img src="${iconUrl}" alt="Weather Icon">`;
-  
+
       let wind = document.querySelector("#win");
       wind.innerHTML = `Wind: ${windSpeed} m/s`;
       let humidity = document.querySelector("#hum");
       humidity.innerHTML = `Humidity: ${data.main.humidity}%`;
-let timezoneOffset = data.timezone; // Timezone offset in seconds
-    let now = new Date();
-    let utcTime = now.getTime() + now.getTimezoneOffset() * 60 * 1000; // Current UTC time
-    let cityTime = new Date(utcTime + timezoneOffset * 1000); // Current city time
+      let timezoneOffset = data.timezone; // Timezone offset in seconds
+      let now = new Date();
+      let utcTime = now.getTime() + now.getTimezoneOffset() * 60 * 1000; // Current UTC time
+      let cityTime = new Date(utcTime + timezoneOffset * 1000); // Current city time
 
-    let options = { weekday: "long", hour: "2-digit", minute: "2-digit" };
-    let currentTime = cityTime.toLocaleString("en-US", options);
+      let options = { weekday: "long", hour: "2-digit", minute: "2-digit" };
+      let currentTime = cityTime.toLocaleString("en-US", options);
 
-    // Update the element with the ID "current-time"
-    document.querySelector("#current-time").textContent = currentTime;
+      // Update the element with the ID "current-time"
+      document.querySelector("#current-time").textContent = currentTime;
 
+      let tempCelsius = document.querySelector("#celsius");
+      tempCelsius.addEventListener("click", function () {
+        temp.innerHTML = `${temperature}`;
+      });
+
+      let tempFahrenheit = document.querySelector("#fahrenheit");
+      tempFahrenheit.addEventListener("click", function () {
+        temp.innerHTML = Math.round(`${temperature * 9 / 5 + 32}`);
+      });
     })
     .catch((error) => {
       console.log("Error:", error);
